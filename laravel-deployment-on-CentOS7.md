@@ -1,8 +1,8 @@
 # Deploying Laravel Apps on CentOS 7 Server
 ## Sep 12 2018
 ### Main Steps
-- Setup [Apache](https://www.linode.com/docs/web-servers/apache/install-and-configure-apache-on-centos-7/), PHP 7.x, mysql and composer
 - access with ssh
+- Setup [Apache](https://www.linode.com/docs/web-servers/apache/install-and-configure-apache-on-centos-7/), PHP 7.x, mysql and composer
 - Place Application(s) in /var/www/html
 - Change files permissions and owners as the following:
 ```bash
