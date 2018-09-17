@@ -59,6 +59,8 @@ add the following configration:
     </Directory>
 </VirtualHost>
 ```
+I prefer adding each vhost in seperate file, although you can add them all together.
+[more examples](https://httpd.apache.org/docs/2.4/vhosts/examples.html)
 - Restart Apache
 ```bash
 $ sudo service httpd restart
