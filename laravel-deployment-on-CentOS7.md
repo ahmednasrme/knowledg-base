@@ -70,6 +70,11 @@ $ sudo service httpd restart
 $ httpd -S
 $ apachectl -S
 ```
+- if using queue:
+```bash
+$ nohup php artisan queue:work --daemon &
+```
+[more](https://stackoverflow.com/a/28625847/5561431)
 ### Multithreading Server
 Apache MPM (stands for Multi-Processing Module) to activate.
 - Edit MPM configration file
