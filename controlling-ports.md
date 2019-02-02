@@ -28,7 +28,12 @@ sudo firewall-cmd --zone=public --add-port=81/tcp --permanent
 sudo firewall-cmd --reload
 ```
 Without "--permanent" flag, port 81 will be closed agian on reboot.
-
+## Close a Port
+Similarly we can reverse the last one this way:
+```bash
+firewall-cmd --remove-port=81/tcp --permanent
+```
 ### more:
 1. [How to open a port in the firewall on CentOS or RHEL](http://ask.xmodulo.com/open-port-firewall-centos-rhel.html)
 2. [How to List Open Ports in Firewalld](https://linuxhint.com/list_open_ports_firewalld/)
+3. [How to get started with Firewalld](https://www.certdepot.net/rhel7-get-started-firewalld/)
