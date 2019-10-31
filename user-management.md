@@ -54,6 +54,9 @@ deluser [username] [group]
 ## Change Passwords
 ```bash
 passwd [username]
+#change password of specific user
+passwd
+#change my password
 ```
 ## Password Expiration and Aging
 ```bash
