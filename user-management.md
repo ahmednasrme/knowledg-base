@@ -21,13 +21,28 @@ adduser -D --expiredate=2020-12-22
 
 ## Add/Remove User Into Group
 
-To list user groups use command `groups`
+To list groups assigned to user use command `groups`
 ```bash
 groups [username]
 ```
-To add existing user to group
+To add existing user to group, use `usermod` command
+```bash
+usermod -g [group] [username]
+#adding user to group as new primary
+usermod -G [new,list,of,groups] [username]
+#new list of supplementary groups
+usermod -a [more,groups] [username]
+#appending user to supplementary groups
+```
+To remove user from group, use `gpasswd`
+```bash
+gpasswd -d [username] [group]
+```
+Some distros (like ubuntu) uses `deluser`
+```bash
+deluser [username] [group]
+```
 ## Change Passwords
-
 ```bash
 passwd [username]
 ```
