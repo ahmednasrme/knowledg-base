@@ -5,7 +5,7 @@
 ### Main Steps
 
 - access with ssh
-- Setup [Apache](https://www.linode.com/docs/web-servers/apache/install-and-configure-apache-on-centos-7/), PHP 7.x, mysql and composer
+- Setup [Apache](https://www.linode.com/docs/web-servers/apache/install-and-configure-apache-on-centos-7/), [PHP 7.x](https://linuxize.com/post/install-php-7-on-centos-7/), mysql and composer
 - Place Application(s) in /var/www/html
 - Change files permissions and owners as the following:
 
