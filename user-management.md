@@ -51,6 +51,15 @@ Some distros (like ubuntu) uses `adduser` to add existing user to an existing gr
 adduser [username] [group]
 deluser [username] [group]
 ```
+
+## Delete User Group
+Using `groupdel`
+```bash
+groupdel [group]
+#delete group
+```
+you may force it with `-f` option so it will be deleted even if its primary of a user
+
 ## Change Passwords
 ```bash
 passwd [username]
