@@ -12,7 +12,7 @@ You get a new username applying system default configuration, to list\change thi
 adduser -D
 #list default configuration
 adduser -D --expiredate=2020-12-22
-#change Default EXPIRE date to Dec 12 2020
+#change Default EXPIRE date to Dec 22 2020
 #alternativly you can edit defaults in file /etc/default/useradd
 ```
 * To set password upon creation use option `-p`
