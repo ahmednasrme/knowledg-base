@@ -1,5 +1,5 @@
 # Linux User Management
-
+User management operation needs to be done by root user or super user.
 ## Create User
 
 ```bash
@@ -18,6 +18,14 @@ adduser -D --expiredate=2020-12-22
 * To add user into primary group use option `-g`
 * To add user into secondary group(s) use option `-G`
 * Read more `adduser -h`
+
+## Delete User
+```bash
+userdel [username]
+#delete user
+userdel -r [username]
+#delete user with home directory and mail spool
+```
 
 ## Add/Remove User Into Group
 
