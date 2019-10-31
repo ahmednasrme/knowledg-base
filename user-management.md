@@ -59,6 +59,8 @@ passwd
 #change my password
 ```
 ## Password Expiration and Aging
+To list user account aging info use `-l` option with `chage`
 ```bash
-chage
+chage -l [username]
 ```
+for more about it use `chage --help`
