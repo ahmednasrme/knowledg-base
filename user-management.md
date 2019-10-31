@@ -1,5 +1,7 @@
 # Linux User Management
+
 User management operation needs to be done by root user or super user.
+
 ## Create User
 
 ```bash
@@ -20,6 +22,7 @@ adduser -D --expiredate=2020-12-22
 * Read more `adduser -h`
 
 ## Delete User
+
 ```bash
 userdel [username]
 #delete user
@@ -53,6 +56,7 @@ deluser [username] [group]
 ```
 
 ## Delete User Group
+
 Using `groupdel`
 ```bash
 groupdel [group]
@@ -61,13 +65,16 @@ groupdel [group]
 you may force it with `-f` option so it will be deleted even if its primary of a user
 
 ## Change Passwords
+
 ```bash
 passwd [username]
 #change password of specific user
 passwd
 #change my password
 ```
+
 ## Password Expiration and Aging
+
 To list user account aging info use `-l` option with `chage`
 ```bash
 chage -l [username]
