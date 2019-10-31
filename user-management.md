@@ -38,8 +38,9 @@ To remove user from group, use `gpasswd`
 ```bash
 gpasswd -d [username] [group]
 ```
-Some distros (like ubuntu) uses `deluser`
+Some distros (like ubuntu) uses `adduser` to add existing user to an existing group, `deluser` to remove user from group and `addgroup` to create new user group.
 ```bash
+adduser [username] [group]
 deluser [username] [group]
 ```
 ## Change Passwords
