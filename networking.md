@@ -23,3 +23,6 @@ If you have multiple connections (for example: wireless and wired connections to
 ```
 sudo ip route add [DestinationServer] via [IP]
 ```
+
+### Configuration File
+For permenant changes edit `/etc/network/interfaces` then restart `/etc/init.d/networking restart`
