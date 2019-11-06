@@ -114,5 +114,7 @@ Where each digit is assigning permissions for user,group and others, each digit 
 There for:
 - rwx = 4 + 2 + 1 = 7
 - rx = 4 + 1 = 5
+
 [more about chmod](https://www.computerhope.com/unix/uchmod.htm)
+
 to view files with owners and permissions use option `-l` with `ls` command.
