@@ -80,3 +80,39 @@ To list user account aging info use `-l` option with `chage`
 chage -l [username]
 ```
 for more about it use `chage --help`
+
+## File permissions and ownership
+
+Linux grants ownership by default to the creator, this can be changed by command `chown` as the following:
+```bash
+chown [option] [owner] [: [group]] FILE(s)
+#change the owner and/or group of each FILE to OWNER and/or GROUP.
+chown [OPTION]... --reference=RFILE FILE(s)
+#change the owner and group of each FILE to those of RFILE.
+```
+
+Command `chmod` to modify permissions, that can be noted with symbols: [rwx] or octals [0-7]. Permissions are given associated with:
+* User (file owner User)
+* Group (file owner Group)
+* Others
+so you set different set of permissions for each, example:
+```shell
+chmod u=rwx,g=rx,o=r myfile
+# file owner user can read,write and execute myfile
+# file owner group members can read and execute
+# others can only read
+```
+The following is equivalent using octal notaion:
+```shell
+chmod 754 myfile
+```
+Where each digit is assigning permissions for user,group and others, each digit is sum of permissions supposed to be assigned where:
+* Read = 4
+* Write = 2
+* Execute = 1
+* No permission = 0
+There for:
+- rwx = 4 + 2 + 1 = 7
+- rx = 4 + 1 = 5
+[more about chmod](https://www.computerhope.com/unix/uchmod.htm)
+to view files with owners and permissions use option `-l` with `ls` command.
