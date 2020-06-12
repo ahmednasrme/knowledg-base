@@ -29,3 +29,12 @@ v: The “v” stands for “verbose.” This option will list all of the files 
 z: The z option is very important and tells the tar command to uncompress the file (gzip).
 f: This options tells tar that you are going to give it a file name to work with.
 [from](https://www.interserver.net/tips/kb/extract-tar-gz-files-using-linux-command-line/)
+
+## Word Count
+`wc` options: `-l` counting lines, `-c` byte count, `-m` char count and `-w` for word count.
+
+## Show command Location
+`which [command]`
+
+## Print Text File Content
+`cat`
